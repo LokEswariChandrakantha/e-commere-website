@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product List - E-Commerce</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ======= Navbar ======= -->
+  <section class="header_menu" id="header_menu">
+    <div class="container-fluid px-0 shadow">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <a class="navbar-brand pl-5" href="index.html">
+          <img src="assets/images/logo.png" class="img-fluid" width="120px" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item active"><a class="nav-link" href="product.html">Product</a></li>
+            <li class="nav-item"><a class="nav-link" href="category.html">Category</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+          <div class="search mr-3">
+            <a href="search.html" class="btn btn-sm btn-outline-primary">Search</a>
+          </div>
+          <div class="cart">
+            <a href="cart.html">
+              <i class="fas fa-shopping-cart fa-2x"></i>
+              <span class="badge badge-pill badge-primary">24</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ======= Product List Section ======= -->
+  <section class="products py-5 my-5" id="products">
+    <div class="container">
+      <div class="section_title text-center mb-5">
+        <h1 class="text-capitalize">Products</h1>
+      </div>
+      <div class="row">
+        <!-- Filter Sidebar -->
+        <div class="col-md-3 border-right mb-4">
+          <h4 class="mb-4 border-bottom">Filters</h4>
+          <div class="mb-4">
+            <label><b>Category</b></label>
+            <ul class="list-group">
+              <li class="list-group-item">Men</li>
+              <li class="list-group-item">Women</li>
+              <li class="list-group-item">Electronics</li>
+              <li class="list-group-item">Toys</li>
+              <li class="list-group-item">Books</li>
+            </ul>
+          </div>
+          <div>
+            <label><b>Price</b></label>
+            <input type="range" min="100" max="1000" step="100" class="form-control-range">
+            <div class="d-flex justify-content-between">
+              <label>₹100</label>
+              <label>₹1000</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="col-md-9">
+          <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="single_product shadow text-center p-3">
+                <div class="product_img">
+                  <a href="product1.html"><img src="assets/images/product1.png" class="img-fluid" alt=""></a>
+                </div>
+                <div class="product-caption my-3">
+                  <div class="product-ratting text-warning">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><i class="far fa-star"></i>
+                  </div>
+                  <h5><a href="product1.html">Green Dress with details</a></h5>
+                  <div class="price"><b>₹400</b></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="single_product shadow text-center p-3">
+                <div class="product_img">
+                  <a href="product2.html"><img src="assets/images/product2.png" class="img-fluid" alt=""></a>
+                  <span class="badge py-2 px-3 badge-pill badge-danger">New</span>
+                </div>
+                <div class="product-caption my-3">
+                  <div class="product-ratting text-warning">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><i class="far fa-star"></i>
+                  </div>
+                  <h5><a href="product2.html">Stylish Shirt for Men</a></h5>
+                  <div class="price"><b>₹499</b></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="single_product shadow text-center p-3">
+                <div class="product_img">
+                  <a href="product3.html"><img src="assets/images/product3.png" class="img-fluid" alt=""></a>
+                  <span class="badge py-2 px-3 badge-pill badge-danger">New</span>
+                </div>
+                <div class="product-caption my-3">
+                  <div class="product-ratting text-warning">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><i class="far fa-star"></i>
+                  </div>
+                  <h5><a href="product3.html">Trendy Handbag</a></h5>
+                  <div class="price"><b>₹799</b></div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- row -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Features -->
+    <section class="py-5 bg-dark text-white text-center">
+      <div class="container">
+        <h2>Why Shop With Us?</h2>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <i class="fas fa-shipping-fast fa-3x mb-2"></i>
+            <h5>Free Shipping</h5>
+            <p>Across all cities in India</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-lock fa-3x mb-2"></i>
+            <h5>Secure Payments</h5>
+            <p>Trusted payment methods</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-headset fa-3x mb-2"></i>
+            <h5>24x7 Support</h5>
+            <p>Quick response to all queries</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <!-- ======= Footer ======= -->
+  <section class="footer_section pt-5 pb-2" id="footer_section">
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-6 pl-5">
+            <a href="index.html"><img src="assets/images/logo.png" width="150px" class="img-fluid" alt="logo"></a>
+            <p class="mt-2">Quality products at the best prices.</p>
+          </div>
+          <div class="col-md-3 col-6">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Offers</a></li>
+              <li><a href="#">Coupons</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h5>Categories</h5>
+            <ul>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Men</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center pt-3 border-top">
+        <p>&copy; 2025 E-Commerce. All rights reserved.</p>
+      </div>
+    </footer>
+  </section>
+
+  <!-- ======= Scroll to Top ======= -->
+  <div class="backtop">
+    <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+      <i class="fas fa-chevron-up text-dark"></i>
+    </a>
+  </div>
+  
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

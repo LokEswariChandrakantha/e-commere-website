@@ -1,0 +1,31 @@
+* {
+  scroll-behavior: smooth;
+}
+/* Smooth scroll */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Carousel image fix */
+.carousel-inner img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+/* Scroll to Top Button - Minimal Left-Side */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;  /* 🡐 changed from right to left */
+  color: #333;
+  background: none;
+  border: none;
+  font-size: 28px;
+  display: none;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-top:hover {
+  color: #000;
+}

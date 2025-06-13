@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Search - MyShop</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ======= Navbar ======= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow py-3">
+  <a class="navbar-brand pl-3" href="index.html">
+    <img src="assets/images/logo.png" alt="logo" width="120px" />
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+      <li class="nav-item"><a class="nav-link" href="category.html">Category</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+    </ul>
+    <a href="cart.html" class="btn btn-outline-primary mr-3"><i class="fas fa-shopping-cart"></i></a>
+  </div>
+</nav>
+
+<!-- ======= Search Section ======= -->
+<section class="search_section py-5 my-5" id="search_section">
+  <div class="container">
+    <div class="title text-center mb-5">
+      <h2><i class="far fa-file mr-2"></i>Search</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+        <!-- Search Input -->
+        <div class="input-group">
+          <input type="text" class="form-control" value="xyz">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+          </span>
+        </div>
+        <small>Showing all results matching "xyz"</small>
+
+        <!-- Table Results -->
+        <div class="table-responsive mt-3">
+          <table class="table table-hover">
+            <tbody class="border-bottom">
+              <tr>
+                <td class="number text-center">1</td>
+                <td class="image">
+                  <img src="assets/images/product1.png" width="100px" class="img img-fluid" alt="">
+                </td>
+                <td class="product"><strong>Green Dress</strong><br>Elegant green party dress with detail work.</td>
+                <td class="rate text-right">
+                  <span class="text-warning">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i>
+                  </span>
+                </td>
+                <td class="price text-right">₹400</td>
+              </tr>
+              <tr>
+                <td class="number text-center">2</td>
+                <td class="image">
+                  <img src="assets/images/product2.png" width="100px" class="img img-fluid" alt="">
+                </td>
+                <td class="product"><strong>Stylish Shirt</strong><br>Formal shirt for men in modern fit.</td>
+                <td class="rate text-right">
+                  <span class="text-warning">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i>
+                  </span>
+                </td>
+                <td class="price text-right">₹499</td>
+              </tr>
+              <tr>
+                <td class="number text-center">3</td>
+                <td class="image">
+                  <img src="assets/images/product3.png" width="100px" class="img img-fluid" alt="">
+                </td>
+                <td class="product"><strong>Handbag</strong><br>Trendy handbag for everyday use.</td>
+                <td class="rate text-right">
+                  <span class="text-warning">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i>
+                  </span>
+                </td>
+                <td class="price text-right">₹799</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Table Results -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Footer ======= -->
+<footer class="bg-light text-center text-lg-start pt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <img src="assets/images/logo.png" alt="logo" width="120" />
+        <p class="mt-2">Best deals on quality products</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Offers</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Categories</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Fashion</a></li>
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Support</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <p class="text-center mb-0 py-2">&copy; 2025 MyShop. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ======= Scroll to Top ======= -->
+<a href="#" id="scrollToTopBtn" class="scroll-top" title="Go to top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+<script>
+  window.onload = function () {
+    const scrollBtn = document.getElementById("scrollToTopBtn");
+    window.addEventListener("scroll", function () {
+      scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    scrollBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  };
+</script>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
